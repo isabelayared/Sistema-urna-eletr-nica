@@ -88,6 +88,9 @@ def registrar_votos():
             total += 1
             # Exibe uma mensagem confirmando o voto registrado
             print("Voto para o prefeito: ",candidatos_exemplo[escolha], "computado")
+            #Retorna ao menu, pois o voto é unitário
+            menu()
+            return 
             # Verifica se o código digitado é -1 para encerrar a votação
         elif(escolha == "-1"):
             # Exibe uma mensagem indicando a saída da votação e sai do loop
